@@ -2,7 +2,6 @@
 
 NOTE * This app demonstrates how to make raw API calls with the use of Xero's node SDK.
 
-If you are looking for xero-node sample app & example SDK API usage please visit: https://github.com/XeroAPI/xero-node-oauth2-app.
 
 This App simply shows how to connect to Xero's api without an SDK in javascript
 
@@ -39,8 +38,7 @@ _note: I wouldn't recommend using a config.json for storing sensitive credential
 
 **Scopes**
 
-You can use the default scopes included in this example config.json, but to expirement with the full list of scopes and what they do please see [this list](https://developer.xero.com/documentation/oauth2/scopes).
-
+You can use the default scopes included in this example config.json.
 some explanations: 
 
 "openid profile email" - access openid and user info (idtoken)
@@ -52,8 +50,7 @@ some explanations:
 
 ```bash
 npm start
-```
-From the app root page click through the OAuth flow and return to the console to see the results from the API printed. The accessToken and idToken are encoded JSON web tokens (JWT), so the idToken 'claims' are decoded and printed as well to show the details inside. Once the OAuth flow is complete try getting API data back or refreshing the token with the buttons on the /home page. 
+``` 
 
 ## Stop
 
